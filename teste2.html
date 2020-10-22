@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste 001</title>
+</head>
+
+<body>
+    <div id="app">
+        <span>Placa de Vídeo: R$ {{preco}}</span>
+        <span>Quantidade: {{quantidade}}</span>
+        <span>Total: R$ {{preco * quantidade}}</span>
+        <button @click="quantidade++" >Quantidade++</button>
+        <button @click="quantidade = 0">Limpar</button>
+    </div>
+    <!-- development version, includes helpful console warnings -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    
+    <script>
+        const vm = new Vue({
+            el: '#app',
+            data: {
+                preco: 3699.50,
+                quantidade: 0
+            }
+
+        });
+
+        console.log(vm);
+    </script>
+</body>
+
+</html>
