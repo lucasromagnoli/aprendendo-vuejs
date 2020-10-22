@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste 001</title>
+</head>
+
+<body>
+    <div id="app">
+        <p>Olá, meu nome é {{nome}} ! tenho {{idade}} e moro em {{cidade}}.</p>
+        <p>E este é meu hello world em vuejs!</p>
+    </div>
+    <!-- development version, includes helpful console warnings -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    
+    <script>
+        const vm = new Vue({
+            el: '#app',
+            data: {
+                nome: 'Lucas Ramos Romagnoli',
+                idade: 24,
+                cidade: 'Goiânia - GO'
+            }
+
+        });
+
+        console.log(vm);
+    </script>
+</body>
+
+</html>
