@@ -1,19 +1,22 @@
 <template>
   <section class="produtos-container">
-    <div v-if="produtos && produtos.length" class="produtos">
-      <div class="produto" v-for="produto in produtos" :key="produto.id">
-        <router-link to="/">
-          <img v-if="produto.fotos" :src="produto.fotos[0].src" alt="produto.fotos[0].titulo">
-          <h2 class="titulo">{{produto.nome}}</h2>
-          <p class="preco">{{produto.preco}}</p>
-          <p>{{produto.descricao}}</p>
-        </router-link>
+    <transition mode="out-in">
+      <div v-if="produtos && produtos.length" class="produtos" key="produtos">
+        <div class="produto" v-for="produto in produtos" :key="produto.id">
+          <router-link to="/">
+            <img v-if="produto.fotos" :src="produto.fotos[0].src" alt="produto.fotos[0].titulo">
+            <h2 class="titulo">{{produto.nome}}</h2>
+            <p class="preco">{{produto.preco}}</p>
+            <p>{{produto.descricao}}</p>
+          </router-link>
+        </div>
+        <ProdutosPaginar :produtosTotal="produtosTotal" :produtosPorPagina="produtosPorPagina"/>
       </div>
-      <ProdutosPaginar :produtosTotal="produtosTotal" :produtosPorPagina="produtosPorPagina"/>
-    </div>
-    <div v-else-if="produtos && produtos.length === 0" class="sem-resultadosEstout">
-      <p>Busca sem resultados. Tente buscar outros produtos.</p>
-    </div>
+      <div v-else-if="produtos && produtos.length === 0" class="sem-resultados" key="sem-resultados">
+        <p>Busca sem resultados. Tente buscar outros produtos.</p>
+      </div>
+      <PaginaCarregando v-else key="carregando"/>
+    </transition>
   </section>
 </template>
 
@@ -47,6 +50,7 @@ export default {
   },
   methods: {
     getProdutos() {
+      this.produtos = null;
       api.get(this.url).then(response => {
         this.produtosTotal = Number(response.headers['x-total-count']);
         this.produtos = response.data;
