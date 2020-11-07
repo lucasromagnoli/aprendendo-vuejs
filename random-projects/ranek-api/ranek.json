@@ -104,6 +104,30 @@
       "bairro": "Copacabana",
       "cidade": "Rio de Janeiro",
       "estado": "RJ"
+    },
+    {
+      "id": "teste@teste.com",
+      "nome": "Testador",
+      "email": "teste@teste.com",
+      "senha": "alalalal",
+      "cep": "74905770",
+      "rua": "Avenida São Paulo",
+      "numero": "25",
+      "bairro": "Vila Brasília",
+      "cidade": "Aparecida de Goiânia",
+      "estado": "GO"
+    },
+    {
+      "id": "lucas",
+      "nome": "lucas",
+      "email": "lucas",
+      "senha": "",
+      "cep": "74905770",
+      "rua": "Avenida São Paulo",
+      "numero": "25",
+      "bairro": "Vila Brasília",
+      "cidade": "Aparecida de Goiânia",
+      "estado": "GO"
     }
   ],
   "produto": [
@@ -133,6 +157,22 @@
       "vendido": "false",
       "descricao": "Esse é um novo notebook.",
       "fotos": null
+    },
+    {
+      "nome": "teste",
+      "preco": "1312313",
+      "descricao": "testeqqqq",
+      "fotos": null,
+      "usuario_id": "lucas",
+      "id": "ihEQ0wH"
+    },
+    {
+      "nome": "teste2",
+      "preco": "222",
+      "descricao": "",
+      "fotos": null,
+      "usuario_id": "lucas",
+      "id": "r51Vp-g"
     }
   ]
 }
