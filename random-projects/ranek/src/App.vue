@@ -2,7 +2,9 @@
   <div id="app">
     <TheHeader/>
     <main id="main">
-      <router-view/>
+      <transition mode="out-in">
+        <router-view/>
+      </transition>
     </main>
     <TheFooter/>
   </div>
@@ -33,6 +35,10 @@ body {
   font-family: "Ubuntu", Helvetica, Arial, sans-serif;
   color: #345;
   background: url("./assets/pattern.svg") repeat top;
+}
+
+label {
+  margin-bottom: 5px;
 }
 
 #app {
@@ -109,6 +115,7 @@ textarea:hover, textarea:hover {
 v.v-leave-to {
   transform: translate3d(0, 20px, 0);
 }
+
 .v-enter-active,
 .v-leave-active {
   transition: all 0.3s;
