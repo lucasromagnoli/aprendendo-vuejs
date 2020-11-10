@@ -1,11 +1,13 @@
 <template>
   <form>
-    <label for="nome">Nome</label>
+    <div class="usuario" v-if="mostrarDadosLogin">
+      <label for="nome">Nome</label>
       <input id="nome" name="nome" type="text" v-model="nome">
-    <label for="email">E-mail</label>
-    <input id="email" name="email" type="text" v-model="email">
-    <label for="senha">Senha</label>
-    <input id="senha" name="senha" type="password" v-model="senha">
+      <label for="email">E-mail</label>
+      <input id="email" name="email" type="text" v-model="email">
+      <label for="senha">Senha</label>
+      <input id="senha" name="senha" type="password" v-model="senha">
+    </div>
     <label for="cep">Cep</label>
     <input id="cep" name="cep" type="text" v-model="cep" @keyup="preencherCep">
     <label for="rua">Rua</label>
@@ -30,6 +32,9 @@ import {getCep} from "@/services";
 export default {
   name: "UsuarioForm",
   computed: {
+    mostrarDadosLogin() {
+      return (!this.$store.state.login || this.$route.name == 'usuario-editar');
+    },
     nome: {
       get() {
         return this.$store.state.usuario.nome;
@@ -120,12 +125,15 @@ export default {
 </script>
 
 <style scoped>
-form {
+form, .usuario{
   display: grid;
   grid-template-columns:  80px 1fr;
   align-items: center;
 }
 
+.usuario {
+  grid-column: 1 / 3;
+}
 .button {
   grid-column: 2;
   margin-top: 10px;
