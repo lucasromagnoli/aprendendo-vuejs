@@ -43,6 +43,116 @@
         "estado": "RJ"
       },
       "id": 2
+    },
+    {
+      "comprador_id": "lucas",
+      "vendedor_id": "andre@origamid.com",
+      "produto": {
+        "id": "smartphone",
+        "nome": "Smartphone",
+        "usuario_id": "andre@origamid.com",
+        "preco": "1999",
+        "vendido": "false",
+        "descricao": "Esse é um novo smartphone.",
+        "fotos": null
+      },
+      "endereco": {
+        "cep": "74905770",
+        "rua": "Avenida São Paulo",
+        "numero": "25",
+        "bairro": "Vila Brasília",
+        "cidade": "Aparecida de Goiânia",
+        "estado": "GO"
+      },
+      "id": 3
+    },
+    {
+      "comprador_id": "ehjorge",
+      "vendedor_id": "andre@origamid.com",
+      "produto": {
+        "id": "tablet",
+        "nome": "Tablet",
+        "usuario_id": "andre@origamid.com",
+        "preco": "1399",
+        "vendido": "false",
+        "descricao": "Esse é um novo tablet.",
+        "fotos": null
+      },
+      "endereco": {
+        "cep": "ehjorge",
+        "rua": "ehjorge",
+        "numero": "ehjorge",
+        "bairro": "ehjorge",
+        "cidade": "ehjorge",
+        "estado": "ehjorge"
+      },
+      "id": 4
+    },
+    {
+      "comprador_id": "andre@origamid.com",
+      "vendedor_id": "andre@origamid.com",
+      "produto": {
+        "id": "smartphone",
+        "nome": "Smartphone",
+        "usuario_id": "andre@origamid.com",
+        "preco": "1999",
+        "vendido": "false",
+        "descricao": "Esse é um novo smartphone.",
+        "fotos": null
+      },
+      "endereco": {
+        "cep": "12345678",
+        "rua": "Rua Ali Perto",
+        "numero": "150",
+        "bairro": "Esse Mesmo",
+        "cidade": "Rio de Janeiro",
+        "estado": "RJ"
+      },
+      "id": 5
+    },
+    {
+      "comprador_id": "andre@origamid.com",
+      "vendedor_id": "andre@origamid.com",
+      "produto": {
+        "id": "tablet",
+        "nome": "Tablet",
+        "usuario_id": "andre@origamid.com",
+        "preco": "1399",
+        "vendido": "false",
+        "descricao": "Esse é um novo tablet.",
+        "fotos": null
+      },
+      "endereco": {
+        "cep": "12345678",
+        "rua": "Rua Ali Perto",
+        "numero": "150",
+        "bairro": "Esse Mesmo",
+        "cidade": "Rio de Janeiro",
+        "estado": "RJ"
+      },
+      "id": 6
+    },
+    {
+      "comprador_id": "andre@origamid.com",
+      "vendedor_id": "andre@origamid.com",
+      "produto": {
+        "id": "smartphone",
+        "nome": "Smartphone",
+        "usuario_id": "andre@origamid.com",
+        "preco": "1999",
+        "vendido": "false",
+        "descricao": "Esse é um novo smartphone.",
+        "fotos": null
+      },
+      "endereco": {
+        "cep": "12345678",
+        "rua": "Rua Ali Perto",
+        "numero": "150",
+        "bairro": "Esse Mesmo",
+        "cidade": "Rio de Janeiro",
+        "estado": "RJ"
+      },
+      "id": 7
     }
   ],
   "usuario": [
@@ -125,6 +235,30 @@
       "cep": "74905770",
       "rua": "Avenida São Paulo",
       "numero": "25",
+      "bairro": "Vila Brasília",
+      "cidade": "Aparecida de Goiânia",
+      "estado": "GO"
+    },
+    {
+      "id": "ehjorge",
+      "nome": "ehjorge",
+      "email": "ehjorge",
+      "senha": "ehjorge",
+      "cep": "ehjorge",
+      "rua": "ehjorge",
+      "numero": "ehjorge",
+      "bairro": "ehjorge",
+      "cidade": "ehjorge",
+      "estado": "ehjorge"
+    },
+    {
+      "id": "22teste",
+      "nome": "22teste",
+      "email": "22teste",
+      "senha": "22teste",
+      "cep": "74905770",
+      "rua": "Avenida São Paulo",
+      "numero": "22teste",
       "bairro": "Vila Brasília",
       "cidade": "Aparecida de Goiânia",
       "estado": "GO"
