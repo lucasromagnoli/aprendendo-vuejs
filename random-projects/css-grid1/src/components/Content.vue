@@ -54,7 +54,6 @@ export default {
   grid-row-end: 4;
   display: flex;
   flex-direction: column;
-  overflow-y: scroll;
   &::after {
     content: "Content";
   }

@@ -31,7 +31,8 @@ body {
   box-sizing: border-box;
 }
 #app {
-  height: 100vh;
+  min-height: 100vh;
+  max-height: 100%;
   margin: 0 auto;
   max-width: 1600px;
   font-family: Avenir, Helvetica, Arial, sans-serif;
