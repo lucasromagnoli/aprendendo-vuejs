@@ -11,9 +11,19 @@
           </v-alert>
         </v-card>
 
+        <v-card class="green mx-auto" width="2000" max-height="500">
+          <v-avatar
+                    color="grey"
+                    size="100%"
+                    >
 
+            <v-img height="150px"
+                   max-width="150px"
+                   src="https://julianish.files.wordpress.com/2013/04/tumblr_mkc1q4xido1r9dmr3o1_500.jpg?w=584">
+            </v-img>
+          </v-avatar>
+        </v-card>
       </v-container>
-
 
     </v-main>
   </v-app>
@@ -24,8 +34,7 @@
 export default {
   name: 'App',
 
-  components: {
-  },
+  components: {},
   data() {
     return {
       alertIsOpen: true
